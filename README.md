@@ -1,5 +1,6 @@
 ![](https://cloud.githubusercontent.com/assets/110953/7877439/6a69d03e-0590-11e5-9fac-c614246606de.png)
 ## Polymer Starter Kit
+<img src="https://travis-ci.org/HIROSN/polymer-starter-kit.svg" alt="Travis CI Badge"></img>
 
 > A starting point for building web applications with Polymer 1.0
 
@@ -101,6 +102,12 @@ gulp
 ```
 
 Build and optimize the current project, ready for deployment. This includes linting as well as vulcanization, image, script, stylesheet and HTML optimization and minification.
+
+#### Run on localhost
+
+```sh
+open http://localhost:8000 && node index.js
+```
 
 ## Application Theming & Styling
 
