@@ -35,7 +35,7 @@ The standard version of Polymer Starter Kit comes with tools that are very handy
 With Node.js installed, run the following one liner from the root of your Polymer Starter Kit download:
 
 ```sh
-npm install -g gulp bower && npm install && bower install
+npm install && bower install
 ```
 
 #### Prerequisites (for everyone)
@@ -44,8 +44,6 @@ The full starter kit requires the following major dependencies:
 
 - Node.js, used to run JavaScript tools from the command line.
 - npm, the node package manager, installed with Node.js and used to install Node.js packages.
-- gulp, a Node.js-based build tool.
-- bower, a Node.js-based package manager used to install front-end packages (like Polymer).
 
 **To install dependencies:**
 
@@ -59,15 +57,7 @@ The version should be at or above 0.12.x.
 
 2)  If you don't have Node.js installed, or you have a lower version, go to [nodejs.org](https://nodejs.org) and click on the big green Install button.
 
-3)  Install `gulp` and `bower` globally.
-
-```sh
-npm install -g gulp bower
-```
-
-This lets you run `gulp` and `bower` from the command line.
-
-4)  Install the starter kit's local `npm` and `bower` dependencies.
+3)  Install the starter kit's local `npm` and `bower` dependencies.
 
 ```sh
 cd polymer-starter-kit && npm install && bower install
@@ -108,6 +98,8 @@ Build and optimize the current project, ready for deployment. This includes lint
 ```sh
 open http://localhost:8000 && node index.js
 ```
+
+This will run the web application in the default browser on localhost.
 
 ## Application Theming & Styling
 
@@ -361,7 +353,3 @@ gulp.task('vulcanize', function () {
     .pipe($.size({title: 'vulcanize'}));
 });
 ```
-
-## Contributing
-
-Polymer Starter Kit is a new project and is an ongoing effort by the Web Component community. We welcome your bug reports, PRs for improvements, docs and anything you think would improve the experience for other Polymer developers.
